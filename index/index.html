@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZL-SCHEMER</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="个人类网站">
+	<meta name="description" content="个人类网站">
+	<meta name="author" content="YY-MO">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<link rel="shortcut icon" href="http://p1.ifengimg.com/968d479714a706e2/2016/48/iocn.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<script src='js/jquery-1.7.2.min.js'></script>
+	<script src='js/jquery.scrollto.js'></script>
+  	<!--[if IE 6]>
+    <script type="text/javascript" src="http://p2.ifengimg.com/968d479714a706e2/2016/48/iepng.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('#banner .palong,.video_cont,.hr_photo,.hr_jd,.hr_kj,.hr_kj2,.hr_kt','background');
+
+        DD_belatedPNG.fix('#work .wor_line img,.video_cont,.hr_photo,.hr_jd,.hr_kj,.hr_kj2,.hr_kt');
+    </script>
+    <![endif]--> 
+</head>
+<body id="parent">
+  <div class="warp22">
+  	<div id="header">
+      <div class="content">
+  	    <a href="javascript:;" id="logo">
+  	        <img _src="images/logo.png" />
+  	    </a>
+  	    <ul id="nav">
+  	        <li class="navitem">
+  	          <a class="active" href="javascript:;" target="_self">首页</a>
+  	          <ul class="subnav">
+  	            <li class="w_not">
+  	              <a href="javascript:;" target="_self">玩物不丧志
+  	                <i class="fa fa-angle-right"></i>
+  	              </a>
+  	            </li>
+  	            <li class="w_work">
+  	              <a href="javascript:;" target="_self">Work
+  	                <i class="fa fa-angle-right"></i>
+  	              </a>
+  	            </li>
+  	            <li onclick="layerOpen(1)">
+  	              <a href="javascript:;" target="_self">About
+  	                <i class="fa fa-angle-right"></i>
+  	              </a>
+  	            </li>
+  	          </ul>
+  	        </li>
+  	    </ul>
+        <div class="clear"></div>
+      </div>
+  	</div>
+  	<canvas id="canv" width="300" height="150"></canvas>
+  	<div id="banner" data-type='background' data-sudu='10'>
+  		<!-- <div class="banner_img"></div> -->
+  		<img src="images/banner.jpg" alt="" width='100%' />
+  		<video width="100%" height="100%" autoplay="" loop="" preload="auto" class="slider-video" style="width:100%; height:auto;opacity: .6;"><source src="http://resources.jsmo.xin/templates/upload/964/201611/1479099229990.mp4" type="video/mp4"></video>
+  		<div class="palong" data-sudu='300'></div>
+  	</div>
+  	<div id="layerBg" style="display:none"></div>
+  	<div id="work">
+  		<div class="wor_content">
+  			<div class="video">
+  				<video poster="images/video_bg.jpg" src="http://p3.ifengimg.com/968d479714a706e2/2017/6/video2.mp4" width="1002" height="642"  controls="controls" >您目前的浏览器不支持video标签</video>
+  				<!-- <img _src="images/video_bg.jpg" alt="" /> -->
+  			</div>
+  			<div class="vid_txt">
+  				<img _src="images/vid_txt.png" alt="" />
+  			</div>
+  		</div>
+  		<div class="wor_k"></div>
+  		<div class="wor_line" id="wor_line">
+  			<div class="line_content">
+  				<img _src="images/line_bt.png" alt="" class="line_bt" />
+  			</div>
+  		</div>
+  		<div class="p3_content" id="lb_cont01">
+  			<div class="p3_center">
+  				<div class="p3_img1">
+  					<img _src="images/par_img1.png" alt="" class="p3-5"/>
+  				</div>
+  				<div class="p3_img2">
+  					<img _src="images/par_img2.jpg" alt="" class="p3-2" />
+  				</div>
+  				<div class="p3ceng_p3">
+  					<img _src="images/par_img3.jpg" alt="" class="p3-6" />
+  				</div>
+  				<div class="p3ceng_p4">
+  					<img _src="images/par_img4.jpg" alt="" class="p3-7" />
+  				</div>
+  				<div class="p3_img3">
+  					<img _src="images/par_img9.jpg" alt="" class="p3-5"/>
+  				</div>
+  				<div class="p3_img4">
+  					<img _src="images/par_img8.jpg" alt="" class="p3-5"/>
+  				</div>
+  				<div class="p3_img5">
+  					<img _src="images/par_img5.jpg" alt="" class="p3-7"/>
+  				</div>
+  				<div class="p3_img6">
+  					<img _src="images/par_img6.jpg" alt="" class="p3-6"/>
+  				</div>
+  				<div class="p3_img3">
+  					<img _src="images/par_img10.jpg" alt="" class="p3-6"/>
+  				</div>
+  				<div class="p3_img7">
+  					<img _src="images/par_img7.jpg" alt="" class="p3-4"/>
+  				</div>
+  				<div id="md_div"></div>
+  			</div>
+  		</div>
+  		<div class="lb_content">
+  			<div class="lb_cont01">
+  				<a href="javascript:;" class="prev">&lt</a>
+    			<a href="javascript:;" class="next">&gt</a>
+  				<div class="lb_nei">
+    				<div class="lb_cont02">
+    					<div class="lb_index">
+    						<img _src="images/lb1.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb2.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb3.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb4.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb5.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb7.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb10.jpg" alt="" />
+    					</div>
+    					<div class="lb_index">
+    						<img _src="images/lb11.jpg" alt="" />
+    					</div>
+    				</div>
+  				</div>
+  				
+  			</div>
+  		</div>
+  		<div class="footer">
+  			<img _src="images/footer_line.png" alt="" class="ft_img"/>
+  			<div class="ft_content">
+  				<ul>
+  					<li><a href="javascript:;" class="a_top color">返回顶部</a></li>
+  					<li><a href="javascript:;" onclick="alert('敬请期待')">玩物不丧志</a></li>
+  					<li><a href="javascript:;" onclick="alert('敬请期待')">SCHMER作品集</a></li>
+  					<li><a href="javascript:;" onclick="layerOpen(1)">关于我们</a></li>
+  				</ul>
+  				<div class="fot_img">
+  					<img _src="images/footer_txt.png" alt="" />
+  				</div>
+  			</div>
+  		</div>
+  	
+  		<div class="ab_tc layercon_2" id="layercon_2">
+  			<!-- <img _src="images/tc.jpg" alt="" class="ab_left" src="images/tc.jpg"/>
+        <div class="ab_right">
+          <h3>关于我们</h3>
+          <p>首先感谢你花时间观看我们还极不成熟的网站，你一定很疑惑这特喵的什么网站？就是些大量的图片，还说的过去的页面效果以及一些小bug...现在终于看到一段简介的说明...对此我们深感抱歉。</p>
+          <p>ZL-SCHEMER是我们初中时给自己要画的漫画起的名字，有负责编剧的、绘画的、描线的...一起讨论剧情，现在想来十二年前时的我们竟是那么的天真可爱。</p>
+          <p>网站还有很多地方需要改善，是我们四个人共同商讨完成，其中有一个聪明伶俐、偶尔中二、对感情执着的设计妹子；一个绘画天赋爆棚，偶尔自恋刚从网易辞职的‘老司机’屌丝，页面上的漫画全都出自他之手；一个从会计转行正在学习前端的大眼哥；一个装着文艺的小小苦逼码农...</p>
+          <p>后续的二级页、作品页都会陆续呈现，真的辛苦我们设计妹子了；我们想通过这个网站把这个漫画完成，漫画后续我们会更新到网站里，形成连载形式，无论结果如何，这是我们共同完成的，这是我最骄傲的事。</p>
+        </div> -->
+        <img _src="images/aboutus.jpg" alt="" class="about" />
+  			<img _src="images/close.png" alt="" class="close" onclick="layerClose(2)">
+  		</div>
+  	</div>
+  </div>
+	<script src='js/fixed.js'></script>
+  	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
